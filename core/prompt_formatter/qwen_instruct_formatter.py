@@ -8,7 +8,10 @@ class QwenInstructPromptFormatter(PromptFormatter):
     ):
         self.prompt_template = (
             f"<|im_start|>system\n{system_context}<|im_end|>\n"
-            f"<|im_start|>user\n{user_prompt_prefix}{{input}}<|im_end|>\n"
+            f"<|im_start|>user\n"
+			f"{user_prompt_prefix}\n"
+			"{{input}}"
+			"<|im_end|>\n"
             f"<|im_start|>assistant\n"
         )
 
