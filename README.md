@@ -43,7 +43,7 @@ If you require a Hugging Face token (to access gated models) or OpenAI API key, 
 
 Further, you can choose the teacher models for generating synthetic data in `config/model_config.yaml`. Note that `input_model` refers to the model used to generate input synthetic data, whilst `output_model` refers to the model used to generate the output synthetic data. `prompt_format` can be used to wrap your prompts with special tokens as required by some model (see [here](https://www.llama.com/docs/model-cards-and-prompt-formats/meta-llama-3/) for an example of the Llama 3 prompt format).
 
-Lastly, you can define the prompt used for your specific task under `prompt_templates`. Here, you must provide a `system_context` if working with chat-based teacher models, and the `user_prompt_prefix` for any prefix string that comes before your actual user prompt. The example used in this repository is for customer review summarization.
+Lastly, you can define the prompt used for your specific task under `prompt_templates`. Here, you must provide a `system_context` if working with chat-based teacher models, and the `user_prompt_prefix` for any prefix string that comes before your actual user prompt. The example used in this repository is for research abstract summarization.
 
 ## Example Usage
 
