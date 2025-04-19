@@ -1,0 +1,10 @@
+{"id": "0", "input": "What are the key differences between supervised and unsupervised learning?"}
+{"id": "1", "input": "Explain the concept of attention in transformer models."}
+{"id": "2", "input": "How does gradient descent work in optimizing neural networks?"}
+{"id": "3", "input": "What is the purpose of dropout in deep learning?"}
+{"id": "4", "input": "Describe how decision trees make predictions."}
+{"id": "5", "input": "What are large language models and how are they trained?"}
+{"id": "6", "input": "Can you explain overfitting with an example?"}
+{"id": "7", "input": "What is the difference between precision and recall?"}
+{"id": "8", "input": "Why is model distillation useful in deploying LLMs?"}
+{"id": "9", "input": "How do convolutional neural networks (CNNs) process images?"}

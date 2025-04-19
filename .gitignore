@@ -1,0 +1,45 @@
+# Project-specific
+data/synth/*
+data/metrics/*
+AutoDistill.pem
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+sdist/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+
+# Environments
+.venv
+venv
+env
+ENV
+
+#Unnecessary files
+*.log
+*.tmp
+
+#IDE files
+.idea/
+*.sublime-project
+*.sublime-workspace

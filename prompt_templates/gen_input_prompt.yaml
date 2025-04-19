@@ -1,0 +1,13 @@
+system_context: |
+    You are a helpful assistant.
+
+user_prompt_prefix: |
+    I want you to generate synthetic customer review data in the format:
+
+    Review 1: The speaker is compact and easy to carry.
+    Review 2: Sound quality is impressive for the price.
+    Review 3: Battery life could be better.
+    Review 4: Great value overall, but lacks bass.
+    Review 5: I use it at the beach all the time, super convenient.
+
+    Generate longer example reviews about any product that you'd like, but only talk about one product. Output only the reviews in the format above and nothing else.

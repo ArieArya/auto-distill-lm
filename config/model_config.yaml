@@ -1,0 +1,6 @@
+input_model:
+    model_id: "meta-llama/Llama-3.1-8B-Instruct"
+    prompt_format: "llama-instruct"
+output_model:
+    model_id: "meta-llama/Llama-3.1-8B-Instruct"
+    prompt_format: "llama-instruct"
