@@ -9,7 +9,7 @@ OUTPUT_FILE = "data/comet_qe_score/comet_score.jsonl"
 os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 
 # Load COMET-QE model
-model_path = download_model("wmt21-comet-qe-mqm")
+model_path = download_model("Unbabel/wmt20-comet-qe-da")
 model = load_from_checkpoint(model_path)
 
 # Load data
