@@ -4,7 +4,7 @@ from comet import download_model, load_from_checkpoint
 from tqdm import tqdm
 
 INPUT_FILE = "data/sample_output/en_fr_translation.jsonl"
-OUTPUT_PATH = "data/comet_qa"
+OUTPUT_PATH = "data/comet_qe_score"
 OUTPUT_FILE = f"{OUTPUT_PATH}/comet_score.jsonl"
 
 os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
