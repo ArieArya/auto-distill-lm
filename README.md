@@ -110,4 +110,4 @@ If you want to compute the [Comet QE score](https://arxiv.org/abs/2210.15696) of
 python3 utils/compute_comet_qe.py
 ```
 
-Comet QE is initially created as a reference-free metric for translation, but may generally be used for analyzing the fluency of the generation output. Make sure to change the input and output file paths in this script to the desired paths.
+Comet QE is initially created as a reference-free metric for machine translation, but may be used to some degree for analyzing the fluency of the generation output. Make sure to change the input and output file paths in this script to the desired paths.

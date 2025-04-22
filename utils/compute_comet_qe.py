@@ -23,6 +23,7 @@ with open(INPUT_FILE, "r", encoding="utf-8") as f:
 
 # Compute scores
 results = model.predict(data, batch_size=64)
+scores = results["scores"]
 
 # Save to new JSONL
 with open(OUTPUT_FILE, "w", encoding="utf-8") as out_f:
@@ -30,4 +31,6 @@ with open(OUTPUT_FILE, "w", encoding="utf-8") as out_f:
         json.dump({"id": i, "comet-qe-score": score}, out_f)
         out_f.write("\n")
 
+average_score = sum(scores) / len(scores)
 print(f"Saved {len(ids)} scores to {OUTPUT_FILE}")
+print(f"Average COMET-QE score: {average_score:.4f}")
