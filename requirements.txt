@@ -133,3 +133,4 @@ xformers==0.0.29.post2
 xgrammar==0.1.17
 yarl==1.19.0
 zipp==3.21.0
+unbabel-comet

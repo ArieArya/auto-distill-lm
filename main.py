@@ -28,7 +28,7 @@ if __name__ == "__main__":
     group.add_argument(
         "--input_file",
         type=str,
-        help="Path to JSONL file containing user-prepared questions (e.g., data/sample/simple_qa.jsonl)"
+        help="Path to JSONL file containing user-prepared questions (e.g., data/sample_input/simple_qa.jsonl)"
     )
     parser.add_argument(
         "--output_file",
