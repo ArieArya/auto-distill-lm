@@ -27,7 +27,7 @@ results = model.predict(data, batch_size=64)
 # Save to new JSONL
 with open(OUTPUT_FILE, "w", encoding="utf-8") as out_f:
     for i, score in zip(ids, results["scores"]):
-        json.dump({"id": i, "comet-qa-score": score}, out_f)
+        json.dump({"id": i, "comet-qe-score": score}, out_f)
         out_f.write("\n")
 
 print(f"Saved {len(ids)} scores to {OUTPUT_FILE}")
