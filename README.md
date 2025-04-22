@@ -101,3 +101,13 @@ Each inference batch logs the following per-prompt metrics:
 -   Engine type and model ID
 
 These are saved to a CSV file (e.g., `data/metrics/performance.csv`).
+
+## Comet QE Score
+
+If you want to compute the [Comet QE score](https://arxiv.org/abs/2210.15696) of your generation outputs, you can run:
+
+```
+python3 utils/compute_comet_qe.py
+```
+
+Comet QE is initially created as a reference-free metric for translation, but may generally be used for analyzing the fluency of the generation output. Make sure to change the input and output file paths in this script to the desired paths.
