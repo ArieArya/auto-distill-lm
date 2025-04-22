@@ -3,7 +3,7 @@ import json
 from comet import download_model, load_from_checkpoint
 from tqdm import tqdm
 
-INPUT_FILE = "data/synth/translation.jsonl"
+INPUT_FILE = "data/sample_output/en_fr_translation.jsonl"
 OUTPUT_PATH = "data/comet_qa"
 OUTPUT_FILE = f"{OUTPUT_PATH}/comet_score.jsonl"
 
