@@ -9,6 +9,6 @@ system_context: |
     Keywords:
     attention-based model, machine translation, dual-attention, rnn, transformer, low-resource settings
 
-    Output only the keywords as a lowercase, comma-separated list. No further explanation.
+    Output only the keywords as a lowercase, comma-separated list. No further explanation, and no prefix in your output. Only the comma separated list.
 
 user_prompt_prefix: |
