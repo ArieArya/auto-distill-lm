@@ -4,6 +4,8 @@ This project provides a flexible framework for generating synthetic datasets usi
 
 The framework supports a number of inference backends, including Hugging Face Transformers, OpenAI APIs, and vLLM servers. Users can use any Hugging Face-compatible models and configure prompt formatting logic as needed.
 
+---
+
 ## Key Features
 
 -   Customizable prompt template formatting (supports special formatting for instruct-based / chat-based models)
@@ -11,6 +13,8 @@ The framework supports a number of inference backends, including Hugging Face Tr
 -   Logs token counts, duration, and throughput for each prompt for experimentation / analysis
 -   Outputs JSONL synthetic datasets suitable for supervised finetuning / training
 -   Easily extendable: define new prompt formatters, models, or output handlers
+
+---
 
 ## Hardware Recommendations
 
@@ -22,6 +26,8 @@ We strongly recommended to use GPU-enabled instances for high-throughput generat
 -   Vast AI
 
 Quantized models (e.g., 4-bit AWQ or bitsandbytes) are supported via vLLM to reduce memory usage.
+
+---
 
 ## Environment Setup
 
@@ -43,7 +49,9 @@ If you require a Hugging Face token (to access gated models) or OpenAI API key, 
 
 Further, you can choose the teacher models for generating synthetic data in `config/model_config.yaml`. Note that `input_model` refers to the model used to generate input synthetic data, whilst `output_model` refers to the model used to generate the output synthetic data. `prompt_format` can be used to wrap your prompts with special tokens as required by some model (see [here](https://www.llama.com/docs/model-cards-and-prompt-formats/meta-llama-3/) for an example of the Llama 3 prompt format).
 
-Lastly, you can define the prompt used for your specific task under `prompt_templates`. Here, you must provide a `system_context` if working with chat-based teacher models, and the `user_prompt_prefix` for any prefix string that comes before your actual user prompt. The example used in this repository is for research abstract summarization.
+Lastly, you can define the prompt used for your specific task under `prompt_templates`. Here, you must provide a `system_context` if working with chat-based teacher models, and the `user_prompt_prefix` for any prefix string that comes before your actual user prompt. The example used in this repository is for customer review summarization.
+
+---
 
 ## Example Usage
 
@@ -89,6 +97,8 @@ The generated output will be a JSONL file in the form:
 
 The "output" key contains the generated synthetic data.
 
+---
+
 ## Performance Logging
 
 Each inference batch logs the following per-prompt metrics:
@@ -102,7 +112,9 @@ Each inference batch logs the following per-prompt metrics:
 
 These are saved to a CSV file (e.g., `data/metrics/performance.csv`).
 
-## Comet QE Score
+---
+
+## Comet QE Score
 
 If you want to compute the [Comet QE score](https://arxiv.org/abs/2210.15696) of your generation outputs, you can run:
 
