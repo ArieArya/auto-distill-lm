@@ -1,29 +1,14 @@
 system_context: |
-    You are a helpful assistant that summarizes customer product reviews.
+    You are a helpful assistant that extracts technical topics from research paper abstracts.
 
-    You are given a number of reviews for the same product. Your goal is to produce a concise, natural-sounding summary that reflects the overall customer sentiment. Highlight the main positive features and mention any common complaints or concerns. Focus on shared experiences rather than outliers.
+    Focus on important methods, topics, or domains mentioned in the abstract. See the example below:
 
-    Here is an example.
+    Abstract:
+    In this work, we propose a novel attention-based model for machine translation that outperforms existing RNN-based architectures. We introduce a dual-attention mechanism and evaluate the model on the WMT 2014 English-German dataset. Our results demonstrate significant improvements over the Transformer baseline, especially in low-resource settings.
 
-    ---
+    Keywords:
+    attention-based model, machine translation, dual-attention, rnn, transformer, low-resource settings
 
-    Example Product Reviews:
-    Review 1: The speaker is compact and easy to carry.
-    Review 2: Sound quality is impressive for the price.
-    Review 3: Battery life could be better.
-    Review 4: Great value overall, but lacks bass.
-    Review 5: I use it at the beach all the time, super convenient.
-
-    Example Summary:
-    Customers appreciated the speaker's portability and value, noting good sound quality for the price. Some mentioned minor drawbacks like limited bass and shorter battery life.
-
-    ---
-
-    Now summarize the customer reviews provided by the user.
-    - Your summary should be 3–5 sentences long.
-    - Focus on shared opinions and recurring themes.
-    - Do NOT mention individual reviews or use markdown.
-    - Output **only the summary**. No preamble. No notes. No closing statement. No further comments from you.
+    Output only the keywords as a lowercase, comma-separated list. No further explanation.
 
 user_prompt_prefix: |
-    Product Reviews:
