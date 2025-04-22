@@ -23,7 +23,7 @@ with open(INPUT_FILE, "r", encoding="utf-8") as f:
         ids.append(obj["id"])
 
 # Compute scores
-results = model.predict(data, batch_size=8, gpus=1 if model.hparams.gpus > 0 else 0)
+results = model.predict(data, batch_size=64)
 
 # Save to new JSONL
 with open(OUTPUT_FILE, "w", encoding="utf-8") as out_f:
