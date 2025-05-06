@@ -2,7 +2,7 @@
 
 This project provides a flexible framework for generating synthetic datasets using large language models as teacher models for distillation or downstream fine-tuning. It enables batch prompting and inferencing, flexible prompt formatting, and metrics logging — making it easy to distill knowledge from stronger models into smaller ones.
 
-The framework supports a number of inference backends, including Hugging Face Transformers, OpenAI APIs, and vLLM servers. Users can use any Hugging Face-compatible models and configure prompt formatting logic as needed.
+The framework supports a number of inference backends, including Hugging Face Transformers, [OpenAI APIs](https://platform.openai.com/docs/models), and [vLLM](https://docs.vllm.ai/en/latest/). Users can use any Hugging Face-compatible models and configure prompt formatting logic as needed.
 
 ---
 
