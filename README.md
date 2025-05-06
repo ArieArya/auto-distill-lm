@@ -126,7 +126,7 @@ Comet QE is initially created as a reference-free metric for machine translation
 
 ---
 
-## Project Deliverables
+## Project Deliverables
 
 Please find the project deliverables below:
 
