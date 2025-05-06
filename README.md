@@ -123,3 +123,13 @@ python3 utils/compute_comet_qe.py
 ```
 
 Comet QE is initially created as a reference-free metric for machine translation, but may be used to some degree for analyzing the fluency of the generation output. Make sure to change the input and output file paths in this script to the desired paths.
+
+---
+
+## Project Deliverables
+
+Please find the project deliverables below:
+
+-   [Project Proposal](https://drive.google.com/file/d/1NZWhMYj5ATUxrVXKDAbJgNPagZ0uXH-I/view?usp=sharing)
+-   [Progress Report](https://drive.google.com/file/d/1sSlcaWiiFDdSple8qRkneX3nyi1rnNGJ/view?usp=sharing)
+-   [Final Report](https://drive.google.com/file/d/1LYuqSoN2TstpqEKvX4mrSvloDmT49D6l/view?usp=sharing)
